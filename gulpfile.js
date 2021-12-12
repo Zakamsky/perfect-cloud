@@ -80,16 +80,25 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// Images
+//
 
-const optimizeImages = () => {
-  return gulp.src( `${paths.src}/img/**/*.{png,jpg,svg}`, {"allowEmpty": true})
-    .pipe(svgmin())
+const optimizeRastr = () => {
+  return gulp.src( `${paths.src}/img/**/*.{png,jpg}`, {"allowEmpty": true})
     .pipe(squoosh())
     .pipe(gulp.dest(`${paths.dest}/img`))
 }
 
-exports.optimizeImages = optimizeImages;
+exports.optimizeRastr = optimizeRastr;
+
+const optimizeSvg = () => {
+  return gulp.src( `${paths.src}/img/**/*.svg`, {"allowEmpty": true})
+    .pipe(svgmin())
+    .pipe(gulp.dest(`${paths.dest}/img`))
+}
+
+exports.optimizeSvg = optimizeSvg;
+
+// exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src( `${paths.src}/img/**/*.{png,jpg,svg}`, {"allowEmpty": true})
@@ -174,6 +183,10 @@ const watcher = () => {
   gulp.watch(`${paths.watch}/**/*.html`, gulp.series(html, reload));
   gulp.watch(`${paths.watch}/images/**/*.**`, gulp.series(copyImages, reload));
 }
+
+const optimizeImages = gulp.parallel(optimizeSvg, optimizeRastr);
+exports.optimizeImages = optimizeImages;
+
 
 // Build
 

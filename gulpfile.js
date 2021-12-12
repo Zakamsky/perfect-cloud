@@ -138,7 +138,7 @@ const copy = (done) => {
     `${paths.src}/img/**/*.svg`,
     `!${paths.src}/img/icons/*.svg`,
   ], {
-    base: "source"
+    base: "src"
   })
     .pipe(gulp.dest(paths.dest))
   done();

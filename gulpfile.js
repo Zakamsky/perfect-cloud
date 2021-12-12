@@ -217,7 +217,7 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    createWebp
+    // createWebp
   ),
   gulp.series(
     server,

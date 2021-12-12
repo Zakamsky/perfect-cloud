@@ -1,0 +1,25 @@
+$shadow-color: rgba($black, .6);
+$shadow-color: darken($dark, 10%);
+
+.hero-block {
+  padding: 15px 25px;
+  color: $light;
+  background-color: $dark;
+  border-radius: $border-radius-lg;
+
+  background-image: url('../img/banner-bg.jpg');
+  box-shadow: inset 0px -410px 30px 14px $shadow-color, inset 0px 0px 30px 14px $shadow-color;
+
+  @include media(md) {
+    box-shadow: inset 0px -75px 30px 14px $shadow-color, inset -285px 0px 30px 14px $shadow-color;
+  }
+
+  @include media(lg) {
+    box-shadow: inset 0px -60px 30px 14px $shadow-color, inset -285px 0px 30px 14px $shadow-color;
+  }
+
+  &__features > li{
+    font-weight: 300;
+    color: $info;
+  }
+}

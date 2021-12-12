@@ -1,0 +1,16 @@
+// abstracts:
+@import "abstract/variables";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "abstract/mixins";
+
+// globals:
+@import 'global/global';
+@import 'global/page';
+@import 'global/header';
+
+// blocks:
+@import "blocks/hero-block";
+@import "blocks/tariffs";
+

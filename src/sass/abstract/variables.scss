@@ -1,0 +1,32 @@
+$primary:       #2E85B6;
+$secondary:     #8f959f;
+$info:          #ececec;
+//$success:       $green;
+//$warning:       $yellow;
+//$danger:        $red;
+$light:         #ffffff;
+$dark:          #333333;
+
+
+// ====== bootstrap customizing: ======
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-size-base:              1rem;
+$min-contrast-ratio:   4;
+
+// === heading ===
+$h1-font-size:                $font-size-base * 1.5;
+$h2-font-size:                $font-size-base * 1.35;
+$h3-font-size:                $font-size-base * 1.25;
+$h4-font-size:                $font-size-base * 1.15;
+$h5-font-size:                $font-size-base * 1.1;
+
+// === navbar ===
+$navbar-brand-padding-y: 0;
+$navbar-light-active-color: $primary;
+
+
+  //$theme-colors: (
+//  "accent":    $new-success,
+//  "dark":    $new-warning,
+//  "gray": $test
+//);

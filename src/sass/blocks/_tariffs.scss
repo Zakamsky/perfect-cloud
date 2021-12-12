@@ -1,0 +1,53 @@
+.tariffs {
+  &__list {
+    //@include list-unstyled();
+    display: grid;
+    grid-gap: 15px;
+
+    @include media(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+  }
+
+  &__item {
+    padding: 15px 30px;
+    background-color: $info;
+    border: 1px solid $light;
+    outline: 1px solid $info;
+  }
+
+  &__specs {
+    margin: 1rem auto;
+    list-style: square;
+    & ::marker {
+      content: '\25A0';
+      font-size: 11px;
+      line-height: 24px;
+      vertical-align: middle;
+      color: $primary;
+      text-shadow:
+        1px 1px $light,
+        1px -1px $light,
+        -1px -1px $light,
+        -1px 1px $light,
+        2px 2px $primary,
+        2px -2px $primary,
+        -2px -2px $primary,
+        -2px 2px $primary
+    ;
+    }
+  }
+
+  &__specs-item {
+    padding-left: 10px;
+    //vertical-align: bottom;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+}

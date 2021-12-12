@@ -1,0 +1,34 @@
+{
+  "tariffs":[
+    {
+      "title": "US-KVM-Privacy",
+      "proc": "1vCPU",
+      "ram": 512,
+      "ssd": 5,
+      "traffic": "unlimited 200mb/s",
+      "price": 111,
+      "img": "./img/hp1.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "US-KVM-SSD-3",
+      "proc": "3vCPU",
+      "ram": 3072,
+      "ssd": 50,
+      "traffic": "unlimited 200mb/s",
+      "price": 999,
+      "img": "./img/hp2.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "US-KVM-SSD-5",
+      "proc": "8vCPU",
+      "ram": 8192,
+      "ssd": 200,
+      "traffic": "unlimited 200mb/s",
+      "price": 3499,
+      "img": "./img/hp3.png",
+      "url": "https://client.perfect-cloud.pro"
+    }
+  ]
+}

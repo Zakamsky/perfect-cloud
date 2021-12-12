@@ -1,0 +1,19 @@
+//$breakpoints: (
+//  'sm': 576px,
+//  'md': 768px,
+//  'lg': 992px,
+//  'xl': 1200px
+//);
+
+@mixin media( $point ) {
+  @if map-has-key($grid-breakpoints, $point) {
+    @media only screen and ( min-width: map-get($grid-breakpoints, $point) ) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and ( min-width: $point + 'px') {
+      @content;
+    }
+  }
+}

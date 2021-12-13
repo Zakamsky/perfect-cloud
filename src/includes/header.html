@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  {#  todo: remoove this#}
+{#    <meta name="robots" content="noindex" />#}
+
+  <title>Perfect Cloud Network Company</title>
+</head>
+<body class="page">
+<!-- header -->
+<header class="page__header header">
+
+  <!-- dark top bar -->
+  <div class="header__top-bar bg-dark">
+    <div class="container text-light text-end py-1">
+      Please contact us by email at
+      <a href="mailto:sales@perfect-cloud.org" class="link-light">sales@perfect-cloud.org</a> |
+      <a href="mailto:help@perfect-cloud.pro" class="link-light">help@perfect-cloud.pro</a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container pb-1 border-bottom border-dark">
+      <a class="navbar-brand" href="/">
+        <img src="./img/perfect-cloud-logo.svg" width="280" alt="Perfect Cloud Network Company logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link{% if page == 'home' %} active" aria-current="page"{% else %}"{% endif %} href="/">Home</a>
+          </li>
+          {% if page == 'home' %}
+            <li class="nav-item">
+              <a class="nav-link" href="#tariffs">Servers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#activites">Activities</a>
+            </li>
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link" href="https://client.perfect-cloud.pro">Client aria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page == 'terms' %} active" aria-current="page{% endif %}" href="/terms-and-conditions.html">Terms and conditions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

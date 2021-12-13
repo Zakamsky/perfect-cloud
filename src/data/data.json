@@ -1,33 +1,96 @@
 {
-  "tariffs":[
+  "dedics": [
+    {
+      "title": "D-E5620-2",
+      "proc": "2 x Intel Xeon E5620",
+      "ram": "16 GB RAM",
+      "ssd": "256 MB SSD",
+      "traffic": "100Mb/s free or 1Gb/s",
+      "price": 305,
+      "img": "./img/hp1.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "D-E5620-4",
+      "proc": "2 x Intel Xeon E5620",
+      "ram": "32 GB RAM",
+      "ssd": "512 MB SSD",
+      "traffic": "100Mb/s free or 1Gb/s",
+      "price": 415,
+      "img": "./img/hp2.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "D-E5620-6",
+      "proc": "2 x Intel Xeon E5620",
+      "ram": "64 GB RAM",
+      "ssd": "1 TB SSD",
+      "traffic": "100Mb/s free or 1Gb/s",
+      "price": 675,
+      "img": "./img/hp3.png",
+      "url": "https://client.perfect-cloud.pro"
+    }
+  ],
+
+  "vds": [
     {
       "title": "US-KVM-Privacy",
       "proc": "1vCPU",
-      "ram": 512,
-      "ssd": 5,
+      "ram": "512 GB RAM",
+      "ssd": "5 GB SSD",
       "traffic": "unlimited 200mb/s",
-      "price": 111,
-      "img": "./img/hp1.png",
+      "price": 360,
+      "img": "./img/server-011.png",
       "url": "https://client.perfect-cloud.pro"
     },
     {
       "title": "US-KVM-SSD-3",
       "proc": "3vCPU",
-      "ram": 3072,
-      "ssd": 50,
+      "ram": "3072 GB RAM",
+      "ssd": "50 GB SSD",
       "traffic": "unlimited 200mb/s",
-      "price": 999,
-      "img": "./img/hp2.png",
+      "price": 700,
+      "img": "./img/server-031.png",
       "url": "https://client.perfect-cloud.pro"
     },
     {
       "title": "US-KVM-SSD-5",
       "proc": "8vCPU",
-      "ram": 8192,
-      "ssd": 200,
+      "ram": "8192 GB RAM",
+      "ssd": "200 GB SSD",
       "traffic": "unlimited 200mb/s",
-      "price": 3499,
-      "img": "./img/hp3.png",
+      "price": 1250,
+      "img": "./img/server-041.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "EU-KVM-SSD-START-FRA",
+      "proc": "1vCPU",
+      "ram": "512 MB RAM",
+      "ssd": "5 GB SSD",
+      "traffic": "unlimited 100mb/s",
+      "price": 6,
+      "img": "./img/server-011.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "EU-KVM-SSD-3-FRA",
+      "proc": "4vCPU",
+      "ram": "3072 MB RAM",
+      "ssd": "50 GB SSD",
+      "traffic": "unlimited 200mb/s",
+      "price": 50,
+      "img": "./img/server-031.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "EU-KVM-SSD-5-FRA",
+      "proc": "8vCPU",
+      "ram": "8192 MB RAM",
+      "ssd": "200 GB SSD",
+      "traffic": "unlimited 200mb/s",
+      "price": 175,
+      "img": "./img/server-041.png",
       "url": "https://client.perfect-cloud.pro"
     }
   ]

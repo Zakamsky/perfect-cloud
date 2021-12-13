@@ -1,60 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap-custom.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
-{#  todo: remoove this#}
-  <meta name="robots" content="noindex" />
+{% set page = 'home' %}
 
-  <title>Perfect Cloud Network Company</title>
-</head>
-<body class="page">
-<!-- header -->
-<header class="page__header header">
-
-  <!-- dark top bar -->
-  <div class="header__top-bar bg-dark">
-    <div class="container text-light text-end py-1">
-      Please contact us by email at
-      <a href="mailto:sales@perfect-cloud.org" class="link-light">sales@perfect-cloud.org</a> |
-      <a href="mailto:sales@perfect-cloud.org" class="link-light">sales@perfect-cloud.org</a>
-    </div>
-  </div>
-
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container pb-1 border-bottom border-dark">
-      <a class="navbar-brand" href="#">
-        <img src="./img/perfect-cloud-logo.svg" width="280" alt="Perfect Cloud Network Company logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ms-auto text-uppercase">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tariffs">Tariffs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#activites">activites</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+{% include 'header.html' %}
 
 <!-- main content -->
 <main class="page__content">
   <h1 class="visually-hidden">Perfect Cloud Network Company</h1>
-  <p class="page__title h1 container">Home</p>
   <section class="hero-block container pt-3">
     <div class="row">
       <div class="col-md-7 col-lg-8 col-xl-9">
@@ -68,7 +18,7 @@
         <p class="hero-block__text">
           That's why you can always be sure of the quality of our services. We are always glad to see you.
         </p>
-        <a href="#" class="hero-block__link">Read more about Ideal Solution Servers</a>
+        <a href="#" class="hero-block__link">Read more about Perfect Cloud Servers</a>
       </div>
       <div class="col-md-5 col-lg-4 col-xl-3 text-center text-md-start">
         <img src="./img/slide_1_picture.png" alt="Planet Earth with servers around" class="hero-block__img">
@@ -88,36 +38,73 @@
 
   <hr class="hr-shadow container">
 
-  <section class="tariffs container" id="tariffs">
-    <h2 class="tariffs__title text-secondary">Please check our standart and custom dedicated servers configurations
+  <section class="tariffs container pt-4" id="tariffs">
+    <h2 class="tariffs__title text-secondary my-4">Please check our standart and custom dedicated servers configurations
     </h2>
+
+    <h3 class="mb-3">Ours dedicated servers:</h3>
 
     <ul class="tariffs__list list-unstyled">
 
-      {% for item in tariffs %}
+      {% for item in dedics %}
         <li class="tariffs__item">
+
           <h3 class="tariffs__item-title h4">
             {{ item.title }}
           </h3>
+
           <img class="tariffs__img" src="{{ item.img }}" alt="photo {{ item.title }}">
+
           <ul class="tariffs__specs">
             <li class="tariffs__specs-item">{{ item.proc }}</li>
-            <li class="tariffs__specs-item">{{ item.ram }} GB RAM</li>
-            <li class="tariffs__specs-item">{{ item.ssd }} SSD</li>
+            <li class="tariffs__specs-item">{{ item.ram }}</li>
+            <li class="tariffs__specs-item">{{ item.ssd }}</li>
             <li class="tariffs__specs-item">{{ item.traffic }}</li>
           </ul>
-          <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex"><span class="me-auto">starting from {{ item.price }}, $ per month</span> &#9658;</a>
 
+          <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
+            <span class="me-auto">starting from {{ item.price }}AED per month</span> &#9658;
+          </a>
 
         </li>
       {% endfor %}
 
+    </ul>
+
+    <hr class="mt-4 mb-5" size="3">
+
+    <h3 class="mb-3">Ours Virtual servers:</h3>
+
+    <ul class="tariffs__list list-unstyled">
+
+      {% for item in vds %}
+        <li class="tariffs__item">
+
+          <h3 class="tariffs__item-title h4">
+            {{ item.title }}
+          </h3>
+
+          <img class="tariffs__img" src="{{ item.img }}" alt="photo {{ item.title }}">
+
+          <ul class="tariffs__specs">
+            <li class="tariffs__specs-item">{{ item.proc }}</li>
+            <li class="tariffs__specs-item">{{ item.ram }}</li>
+            <li class="tariffs__specs-item">{{ item.ssd }}</li>
+            <li class="tariffs__specs-item">{{ item.traffic }}</li>
+          </ul>
+
+          <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
+            <span class="me-auto">starting from {{ item.price }}AED per month</span> &#9658;
+          </a>
+
+        </li>
+      {% endfor %}
 
     </ul>
 
   </section>
   <section class="activities container py-4" id="activites">
-    <h2 class="activities__title h5">Company activites:</h2>
+    <h2 class="activities__title h5">Company activities:</h2>
     <ul class="list-group list-group-flush d-inline-flex">
       <li class="list-group-item">Internet resource trading</li>
       <li class="list-group-item">We manage CPU/GPU power and computing</li>
@@ -129,7 +116,9 @@
   </section>
 
   <section class="servers-images d-flex container flex-column flex-md-row justify-content-around my-4">
+
     <h2 class="visually-hidden">ours servers</h2>
+
     <a href="#!" class="servers-images__link"><img src="img/item-1.jpg" alt="cisco" class="servers-images__img"></a>
     <a href="#!" class="servers-images__link"><img src="img/item-2.jpg" alt="juniper" class="servers-images__img"></a>
     <a href="#!" class="servers-images__link"><img src="img/item-3.jpg" alt="supermicro" class="servers-images__img"></a>
@@ -140,25 +129,4 @@
 
 </main>
 
-<footer class="page__footer bg-info border-top border-2 border-dark small py-3">
-  <div class="container">
-    <div class="row justify-content-between">
-      <div class="col-md-6 col-lg-4">
-        <p class="mb-2">Company information:</p>
-        <p class="mb-2">
-          License number CN-4187026<br>
-          Al Busnad 1 St, Musaffah, Abu Dhabi 20319
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <p class="mb-2">Contact us:</p>
-        <a href="mailto:sales@perfect-cloud.org" class="link-secondary">sales@perfect-cloud.org</a>
-        <p class="mb-2"><a href="#" class="link-secondary">Terms and conditions</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="./js/bootstrap.bundle.min.js" ></script>
-</body>
-</html>
+{% include 'footer.html' %}

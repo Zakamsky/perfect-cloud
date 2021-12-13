@@ -17,3 +17,21 @@ html, body {
   opacity: 1;
 
 }
+
+.list-roman {
+  list-style: upper-roman;
+  margin-bottom: 1rem;
+  ol {
+    list-style: lower-roman;
+    margin-bottom: 1rem;
+  }
+}
+
+.list-latin {
+  list-style: upper-latin;
+  margin-bottom: 1rem;
+  ol {
+    list-style: lower-latin;
+    margin-bottom: 1rem;
+  }
+}

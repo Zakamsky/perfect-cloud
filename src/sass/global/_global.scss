@@ -35,3 +35,19 @@ html, body {
     margin-bottom: 1rem;
   }
 }
+
+.navbar-nav .nav-link {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  //position: relative;
+  //
+  //&::before {
+  //  content: '';
+  //  position: absolute;
+  //  top: $nav-link-padding-y;
+  //  bottom: $nav-link-padding-y;
+  //  width: 1px;
+  //  background-color: $secondary;
+  //
+  //}
+}

@@ -38,71 +38,80 @@
 
   <hr class="hr-shadow container">
 
-  <section class="tariffs container pt-4" id="tariffs">
-    <h2 class="tariffs__title text-secondary my-4">Please check our standart and custom dedicated servers configurations
+  <!-- servers -->
+  <section class="servers container pt-4">
+    <h2 class="servers__title text-secondary my-4">Please check our standart and custom dedicated servers configurations
     </h2>
 
-    <h3 class="mb-3">Ours dedicated servers:</h3>
+    <section class="servers__block " id="servers-vds">
+      <h3 class="mb-3">Ours Virtual servers:</h3>
 
-    <ul class="tariffs__list list-unstyled">
+      <ul class="servers__list list-unstyled">
 
-      {% for item in dedics %}
-        <li class="tariffs__item">
+        {% for item in vds %}
+          <li class="servers__item">
 
-          <h3 class="tariffs__item-title h4">
-            {{ item.title }}
-          </h3>
+            <h3 class="servers__item-title h4">
+              {{ item.title }}
+            </h3>
 
-          <img class="tariffs__img" src="{{ item.img }}" alt="photo {{ item.title }}">
+            <img class="servers__img" src="{{ item.img }}" alt="photo {{ item.title }}">
 
-          <ul class="tariffs__specs">
-            <li class="tariffs__specs-item">{{ item.proc }}</li>
-            <li class="tariffs__specs-item">{{ item.ram }}</li>
-            <li class="tariffs__specs-item">{{ item.ssd }}</li>
-            <li class="tariffs__specs-item">{{ item.traffic }}</li>
-          </ul>
+            <ul class="servers__specs">
+              <li class="servers__specs-item">{{ item.proc }}</li>
+              <li class="servers__specs-item">{{ item.ram }}</li>
+              <li class="servers__specs-item">{{ item.ssd }}</li>
+              <li class="servers__specs-item">{{ item.traffic }}</li>
+            </ul>
 
-          <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
-            <span class="me-auto">starting from {{ item.price }}AED per month</span> &#9658;
-          </a>
+            <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
+              <span class="me-auto">starting from {{ item.price }} AED per month</span> &#9658;
+            </a>
 
-        </li>
-      {% endfor %}
+          </li>
+        {% endfor %}
 
-    </ul>
+      </ul>
+    </section>
 
-    <hr class="mt-4 mb-5" size="3">
 
-    <h3 class="mb-3">Ours Virtual servers:</h3>
+    <hr class="mt-4 mb-5">
 
-    <ul class="tariffs__list list-unstyled">
+    <section class="servers__block " id="servers-dedic">
+      <h3 class="mb-3">Ours dedicated servers:</h3>
 
-      {% for item in vds %}
-        <li class="tariffs__item">
+      <ul class="servers__list list-unstyled">
 
-          <h3 class="tariffs__item-title h4">
-            {{ item.title }}
-          </h3>
+        {% for item in dedics %}
+          <li class="servers__item">
 
-          <img class="tariffs__img" src="{{ item.img }}" alt="photo {{ item.title }}">
+            <h3 class="servers__item-title h4">
+              {{ item.title }}
+            </h3>
 
-          <ul class="tariffs__specs">
-            <li class="tariffs__specs-item">{{ item.proc }}</li>
-            <li class="tariffs__specs-item">{{ item.ram }}</li>
-            <li class="tariffs__specs-item">{{ item.ssd }}</li>
-            <li class="tariffs__specs-item">{{ item.traffic }}</li>
-          </ul>
+            <img class="servers__img" src="{{ item.img }}" alt="photo {{ item.title }}">
 
-          <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
-            <span class="me-auto">starting from {{ item.price }}AED per month</span> &#9658;
-          </a>
+            <ul class="servers__specs">
+              <li class="servers__specs-item">{{ item.proc }}</li>
+              <li class="servers__specs-item">{{ item.ram }}</li>
+              <li class="servers__specs-item">{{ item.ssd }}</li>
+              <li class="servers__specs-item">{{ item.traffic }}</li>
+            </ul>
 
-        </li>
-      {% endfor %}
+            <a href="{{ item.url }}" class="btn btn-primary w-100 d-flex">
+              <span class="me-auto">starting from {{ item.price }} AED per month</span> &#9658;
+            </a>
 
-    </ul>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </section>
+
 
   </section>
+
+  <!-- activities -->
   <section class="activities container py-4" id="activites">
     <h2 class="activities__title h5">Company activities:</h2>
     <ul class="list-group list-group-flush d-inline-flex">
@@ -115,6 +124,7 @@
     </ul>
   </section>
 
+  <!-- image row -->
   <section class="servers-images d-flex container flex-column flex-md-row justify-content-around my-4">
 
     <h2 class="visually-hidden">ours servers</h2>

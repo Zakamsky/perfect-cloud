@@ -34,10 +34,10 @@
 
   "vds": [
     {
-      "title": "US-KVM-Privacy",
-      "proc": "1vCPU",
-      "ram": "512 GB RAM",
-      "ssd": "5 GB SSD",
+      "title": "US-KVM-SSD-2",
+      "proc": "2vCPU",
+      "ram": "2048 MB RAM",
+      "ssd": "20 GB SSD",
       "traffic": "unlimited 200mb/s",
       "price": 360,
       "img": "./img/server-011.png",
@@ -46,7 +46,7 @@
     {
       "title": "US-KVM-SSD-3",
       "proc": "3vCPU",
-      "ram": "3072 GB RAM",
+      "ram": "3072 MB RAM",
       "ssd": "50 GB SSD",
       "traffic": "unlimited 200mb/s",
       "price": 700,
@@ -56,7 +56,7 @@
     {
       "title": "US-KVM-SSD-5",
       "proc": "8vCPU",
-      "ram": "8192 GB RAM",
+      "ram": "8192 MB RAM",
       "ssd": "200 GB SSD",
       "traffic": "unlimited 200mb/s",
       "price": 1250,

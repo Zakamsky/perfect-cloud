@@ -1,4 +1,4 @@
-.tariffs {
+.servers {
   &__list {
     //@include list-unstyled();
     display: grid;
@@ -41,7 +41,6 @@
 
   &__specs-item {
     padding-left: 10px;
-    //vertical-align: bottom;
   }
 
   &__img {

@@ -34,36 +34,6 @@
 
   "vds": [
     {
-      "title": "US-KVM-SSD-2",
-      "proc": "2vCPU",
-      "ram": "2048 MB RAM",
-      "ssd": "20 GB SSD",
-      "traffic": "unlimited 200mb/s",
-      "price": 360,
-      "img": "./img/server-011.png",
-      "url": "https://client.perfect-cloud.pro"
-    },
-    {
-      "title": "US-KVM-SSD-3",
-      "proc": "3vCPU",
-      "ram": "3072 MB RAM",
-      "ssd": "50 GB SSD",
-      "traffic": "unlimited 200mb/s",
-      "price": 700,
-      "img": "./img/server-031.png",
-      "url": "https://client.perfect-cloud.pro"
-    },
-    {
-      "title": "US-KVM-SSD-5",
-      "proc": "8vCPU",
-      "ram": "8192 MB RAM",
-      "ssd": "200 GB SSD",
-      "traffic": "unlimited 200mb/s",
-      "price": 1250,
-      "img": "./img/server-041.png",
-      "url": "https://client.perfect-cloud.pro"
-    },
-    {
       "title": "EU-KVM-SSD-START-FRA",
       "proc": "1vCPU",
       "ram": "512 MB RAM",
@@ -74,6 +44,26 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
+      "title": "EU-KVM-SSD-1-FRA",
+      "proc": "1vCPU",
+      "ram": "1024 MB RAM",
+      "ssd": "10 GB SSD",
+      "traffic": "unlimited 200mb/s",
+      "price": 15,
+      "img": "./img/server-011.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "EU-KVM-SSD-2-FRA\t2\t\t20\t200Mb/s\t599\t",
+      "proc": "2vCPU",
+      "ram": "2048 MB RAM",
+      "ssd": "20 GB SSD",
+      "traffic": "unlimited 200mb/s",
+      "price": 30,
+      "img": "./img/server-031.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
       "title": "EU-KVM-SSD-3-FRA",
       "proc": "4vCPU",
       "ram": "3072 MB RAM",
@@ -81,6 +71,16 @@
       "traffic": "unlimited 200mb/s",
       "price": 50,
       "img": "./img/server-031.png",
+      "url": "https://client.perfect-cloud.pro"
+    },
+    {
+      "title": "EU-KVM-SSD-4-FRA\t6\t\t100\t200Mb/s\t2099",
+      "proc": "6vCPU",
+      "ram": "6144 MB RAM",
+      "ssd": "100 GB SSD",
+      "traffic": "unlimited 200mb/s",
+      "price": 105,
+      "img": "./img/server-041.png",
       "url": "https://client.perfect-cloud.pro"
     },
     {

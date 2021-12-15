@@ -34,7 +34,7 @@
 
   "vds": [
     {
-      "title": "EU-KVM-SSD-START-FRA",
+      "title": "EU-KVM-SSD-1-FRA",
       "proc": "1vCPU",
       "ram": "512 MB RAM",
       "ssd": "5 GB SSD",
@@ -44,7 +44,7 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
-      "title": "EU-KVM-SSD-1-FRA",
+      "title": "EU-KVM-SSD-2-FRA",
       "proc": "1vCPU",
       "ram": "1024 MB RAM",
       "ssd": "10 GB SSD",
@@ -54,7 +54,7 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
-      "title": "EU-KVM-SSD-2-FRA\t2\t\t20\t200Mb/s\t599\t",
+      "title": "EU-KVM-SSD-3-FRA",
       "proc": "2vCPU",
       "ram": "2048 MB RAM",
       "ssd": "20 GB SSD",
@@ -64,7 +64,7 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
-      "title": "EU-KVM-SSD-3-FRA",
+      "title": "EU-KVM-SSD-4-FRA",
       "proc": "4vCPU",
       "ram": "3072 MB RAM",
       "ssd": "50 GB SSD",
@@ -74,7 +74,7 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
-      "title": "EU-KVM-SSD-4-FRA\t6\t\t100\t200Mb/s\t2099",
+      "title": "EU-KVM-SSD-5-FRA",
       "proc": "6vCPU",
       "ram": "6144 MB RAM",
       "ssd": "100 GB SSD",
@@ -84,7 +84,7 @@
       "url": "https://client.perfect-cloud.pro"
     },
     {
-      "title": "EU-KVM-SSD-5-FRA",
+      "title": "EU-KVM-SSD-6-FRA",
       "proc": "8vCPU",
       "ram": "8192 MB RAM",
       "ssd": "200 GB SSD",
